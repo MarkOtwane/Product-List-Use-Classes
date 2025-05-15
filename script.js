@@ -1,4 +1,3 @@
-const cart = document.getElementById("left");
 class Products{
     constructor(image, name, description, price){
         this.image = image;
@@ -51,11 +50,15 @@ class Cart{
     }
 
     displayLeft(){
-        const productList = document.getElementById("left");
+        const cart = document.getElementById("left");
         left.innerHTML += `
+        <div class="all">
             <h1>${this.head}</h1>
+            <div>
             <img src= "${this.image}">
             <p>${this.message}</p>
+            </div>
+            </div>
         `
 
     }

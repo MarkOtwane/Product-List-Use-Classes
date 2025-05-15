@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #f1eeee;
+}
 .main{
     display: flex;
     gap: 2rem;
+    margin: 2rem;
+    p{
+        color: gray;
+    }
     #right{
         display:grid;
         grid-template-columns: repeat(3, 1fr);
@@ -14,7 +20,45 @@
             display: flex;
             flex-direction: column;
             padding: 2rem;
+            button{
+                width: 7rem;
+                height: 2rem;
+                border-radius: 21px;
+                border: 1px solid gray;
+                margin-left: 3rem; 
+            }
+            img{
+                border-radius: 4px;
+            }
+            span{
+                color: orangered;
+                font-weight: bolder;
+            }
+
         }
 
+    }
+    #left{
+        background-color: white;
+        border-radius: 5px;
+        height: 15rem;
+        .all{
+            margin: .2rem;
+        }
+        h1{
+            color: rgb(199, 69, 22);
+
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                width: 5rem;
+                margin: 3rem;
+            }
+        }
     }
 }
