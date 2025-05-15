@@ -10,11 +10,13 @@ class Products{
     displayPage(){
         const productList = document.getElementById("right");
         productList.innerHTML += `
+        <div>
             <img src= "${this.image}">
             <button>Add to Cart</button>
                 <p>${this.name}</p>
                 <h4>${this.description}</h4>
                 <span>$ ${this.price}</span>
+                </div>
         `
 
     }
