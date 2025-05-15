@@ -38,4 +38,35 @@ const product = [
 // looping through the array 
 product.forEach(function(item){
     item.displayPage()
-})
+});
+
+// left
+class Cart{
+    constructor(head, image, message){
+        this.image = image;
+        this.head = head;
+        this.message = message;
+    }
+
+    displayLeft(){
+        const productList = document.getElementById("left");
+        left.innerHTML += `
+            <h1>${this.head}</h1>
+            <img src= "${this.image}">
+            <p>${this.message}</p>
+        `
+
+    }
+
+    
+}
+
+// Create objects using arrays
+const output = [
+    new Cart("Your Cart(0)","food1.png", "Your added items will display here")
+
+];
+// looping through the array 
+output.forEach(function(leftout){
+    leftout.displayLeft()
+});
